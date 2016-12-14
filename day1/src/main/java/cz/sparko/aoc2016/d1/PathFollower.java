@@ -13,6 +13,8 @@ public class PathFollower {
         new PathFollower().follow("input.txt");
     }
 
+
+
     private void follow(String inputFile) throws IOException {
         ClassLoader classLoader = getClass().getClassLoader();
         File file = new File(classLoader.getResource(inputFile).getFile());
