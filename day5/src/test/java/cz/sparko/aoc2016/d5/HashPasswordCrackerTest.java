@@ -1,21 +1,21 @@
 package cz.sparko.aoc2016.d5;
 
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.ObjectFactory;
 import org.testng.annotations.Test;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class HashPasswordCrackerTest {
     @Test
     public void givenAbc_whenTryToCrack_thenPasswordIsCorrect() throws NoSuchAlgorithmException, UnsupportedEncodingException {
         String input = "abc";
         String expectedPassword = "18f47a30";
-        assertEquals(new HashPasswordCracker().crackPassword(input), expectedPassword);
+        assertTrue(new HashPasswordCracker().crackPassword(input).equalsIgnoreCase(expectedPassword));
     }
 
     @DataProvider
