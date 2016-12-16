@@ -1,10 +1,11 @@
 package cz.sparko.aoc2016.d4;
 
+import cz.sparko.aoc2016.common.LetterCountPair;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -61,33 +62,4 @@ public class RoomValidator {
     }
 
 
-    private static class LetterCountPair {
-        private final String letter;
-
-        private int count;
-        LetterCountPair(String letter) {
-            this.letter = letter;
-            this.count = 1;
-        }
-
-        @Override
-        public String toString() {
-            return "LetterCountPair{" +
-                    "letter='" + letter + '\'' +
-                    ", count=" + count +
-                    '}';
-        }
-
-        void add() {
-            count++;
-        }
-
-        public String getLetter() {
-            return letter;
-        }
-
-        int getCount() {
-            return count;
-        }
-    }
 }

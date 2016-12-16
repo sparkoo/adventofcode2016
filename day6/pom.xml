@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>day4</artifactId>
+    <artifactId>day6</artifactId>
     <dependencies>
         <dependency>
             <groupId>cz.sparko.advent-of-code-2016</groupId>
