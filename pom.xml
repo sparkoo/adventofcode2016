@@ -13,6 +13,7 @@
         <module>day2</module>
         <module>day3</module>
         <module>day4</module>
+        <module>day5</module>
     </modules>
 
     <properties>
@@ -23,9 +24,20 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.22</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.8</version>
+        </dependency>
+        <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.10</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
