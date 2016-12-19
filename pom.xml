@@ -17,6 +17,8 @@
         <module>day6</module>
         <module>common</module>
         <module>day7</module>
+        <module>day8</module>
+        <module>day9</module>
     </modules>
 
     <properties>
